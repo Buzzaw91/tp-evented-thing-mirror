@@ -4,9 +4,7 @@
 // Define the "EventedThing" class, so that its instances have
 // an "on" and a "trigger" method to react to events. For example:
 //
-// eventedThing.on('meet', function (name) {
-//  console.log('Nice to meet you, ' + name + '.');
-// });
+// eventedThingc
 //
 // eventedThing.trigger('meet', 'Sarah');
 // -> 'Hi there!'
@@ -18,6 +16,14 @@
 
 function EventedThing () {
   this._listen = {};
+  var result = {};
+  Object.assign(result,EventedThingMethods);
+  return result;
 }
+var EventedThingMethods = {};
+EventedThingMethods.trigge = function (meet,name) {
+  return
+}
+
 
 module.exports = new EventedThing;
